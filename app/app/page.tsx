@@ -59,7 +59,7 @@ export default function Home() {
 
       } else {
         window.location.href =
-          "/client/home";
+          "/client/homeClient";
       }
 
     } catch (error) {
