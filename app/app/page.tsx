@@ -45,6 +45,21 @@ export default function Home() {
         return;
       }
 
+      localStorage.setItem(
+        "usuarioId",
+        data.id
+      );
+
+      localStorage.setItem(
+        "usuarioNome",
+        data.nome
+      );
+
+      localStorage.setItem(
+        "usuarioTipo",
+        data.tipo
+      );
+
       Swal.fire({
         icon: "success",
         title: "Sucesso",
@@ -54,10 +69,12 @@ export default function Home() {
       });
 
       if (data.tipo === "ADMIN") {
+
         window.location.href =
           "/admin/cadastro";
 
       } else {
+
         window.location.href =
           "/client/homeClient";
       }
