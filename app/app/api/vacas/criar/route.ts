@@ -34,7 +34,7 @@ export async function POST(req: Request) {
       data,
       error,
     } = await supabase
-      .from("touros")
+      .from("vacas")
       .insert([
         {
           nome:
@@ -78,7 +78,7 @@ export async function POST(req: Request) {
     return NextResponse.json(
       {
         message:
-          "Touro cadastrado com sucesso!",
+          "Vaca cadastrado com sucesso!",
 
         data,
       },

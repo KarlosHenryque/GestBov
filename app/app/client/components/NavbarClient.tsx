@@ -63,7 +63,7 @@ export default function NavbarClient() {
             {open && (
               <div className="absolute top-10 left-0 bg-white shadow-lg rounded-lg w-40 overflow-hidden z-50">
                 <Link
-                  href="/client/bezerro"
+                  href="/client/bezerros/criar"
                   className="block px-4 py-2 hover:bg-green-100"
                   onClick={() => setOpen(false)}
                 >
@@ -71,7 +71,7 @@ export default function NavbarClient() {
                 </Link>
 
                 <Link
-                  href="/client/touro"
+                  href="/client/touro/criar"
                   className="block px-4 py-2 hover:bg-green-100"
                   onClick={() => setOpen(false)}
                 >
@@ -79,7 +79,7 @@ export default function NavbarClient() {
                 </Link>
 
                 <Link
-                  href="/client/vacas"
+                  href="/client/vacas/criar"
                   className="block px-4 py-2 hover:bg-green-100"
                   onClick={() => setOpen(false)}
                 >
